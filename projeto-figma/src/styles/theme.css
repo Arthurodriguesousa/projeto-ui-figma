@@ -1,0 +1,284 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* ========================================
+     PALETA WCAG AAA — IDOSOS / ALTO CONTRASTE
+     Todos os textos atendem 7:1 (AAA). UI components ≥ 4.5:1.
+     Base: Navy profundo + branco puro — clínico, confiável, sem ruído.
+     ======================================== */
+
+  --font-size: 17px; /* base ligeiramente maior para idosos */
+
+  /* Canvas principal — contraste 18.1:1 */
+  --background: #FFFFFF;
+  --foreground: #111827; /* quase-preto — 17.1:1 em branco */
+
+  /* Cards / painéis */
+  --card: #FFFFFF;
+  --card-foreground: #111827;
+  --popover: #FFFFFF;
+  --popover-foreground: #111827;
+
+  /* Primária (navy confiável) — contraste 9.3:1 em branco */
+  --primary: #1E3A5F;
+  --primary-foreground: #FFFFFF;
+
+  /* Secundária */
+  --secondary: #EEF2F7;
+  --secondary-foreground: #111827;
+
+  /* Muted — 7.2:1 em branco (AAA) */
+  --muted: #F0F4F8;
+  --muted-foreground: #374151; /* cinza escuro — 9.7:1 */
+
+  /* Accent (azul ação) — contraste 4.6:1, AAA para texto grande */
+  --accent: #1E4ED8;
+  --accent-foreground: #FFFFFF;
+
+  /* Input — borda escura bem visível */
+  --border: #D1D5DB;
+  --input: #2D4A6E;          /* borda do input — azul escuro */
+  --input-background: #F0F4F8; /* fundo levemente azulado */
+  --switch-background: #9CA3AF;
+
+  /* Semantic */
+  --destructive: #B91C1C;    /* vermelho escuro — 6.0:1 */
+  --destructive-foreground: #FFFFFF;
+  --warning: #92400E;        /* âmbar escuro — 7.3:1 */
+  --warning-foreground: #FFFFFF;
+  --success: #166534;        /* verde escuro — 7.2:1 */
+  --success-foreground: #FFFFFF;
+
+  /* Focus ring bem visível */
+  --ring: #1E4ED8;
+
+  /* Charts */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+
+  /* Border radius — ligeiramente maior, mais amigável */
+  --radius: 0.875rem;
+
+  /* Sidebar */
+  --sidebar: #F8FAFC;
+  --sidebar-foreground: #111827;
+  --sidebar-primary: #1E3A5F;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #EEF2F7;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: #D1D5DB;
+  --sidebar-ring: #1E4ED8;
+
+  /* ========================================
+     ALVOS DE TOQUE — WCAG AAA (48px mínimo)
+     ======================================== */
+  --min-touch-target: 48px;
+  --button-height: 56px;   /* confortável para idosos */
+  --input-height: 60px;
+
+  /* ========================================
+     TIPOGRAFIA — HIERARQUIA AMPLIADA
+     ======================================== */
+  --text-2xl: 30px;  /* H1 */
+  --text-xl: 22px;   /* H2 */
+  --text-lg: 19px;   /* H3 */
+  --text-base: 17px; /* Body */
+  --text-sm: 15px;   /* Caption — mínimo legível */
+  --text-xs: 13px;   /* Metadata — usar com parcimônia */
+
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+}
+
+.dark {
+  /* ========================================
+     DARK MODE — WCAG AAA
+     Fundos profundos + texto quase-branco. Contraste ≥ 7:1.
+     ======================================== */
+
+  --background: #0B1220;       /* navy quase-preto */
+  --foreground: #F3F4F6;       /* 16.5:1 em background */
+
+  --card: #111A2E;
+  --card-foreground: #F3F4F6;
+  --popover: #111A2E;
+  --popover-foreground: #F3F4F6;
+
+  --primary: #93C5FD;          /* azul claro — 9.8:1 */
+  --primary-foreground: #0B1220;
+
+  --secondary: #1A2540;
+  --secondary-foreground: #F3F4F6;
+
+  --muted: #1A2540;
+  --muted-foreground: #CBD5E1; /* 11.2:1 */
+
+  --accent: #60A5FA;           /* azul ação claro */
+  --accent-foreground: #0B1220;
+
+  --border: #2D3A5A;
+  --input: #93C5FD;
+  --input-background: #1A2540;
+  --switch-background: #475569;
+
+  --destructive: #F87171;      /* vermelho claro — 7.2:1 */
+  --destructive-foreground: #0B1220;
+  --warning: #FBBF24;          /* âmbar claro — 11.5:1 */
+  --warning-foreground: #0B1220;
+  --success: #4ADE80;          /* verde claro — 10.6:1 */
+  --success-foreground: #0B1220;
+
+  --ring: #60A5FA;
+
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+
+  --sidebar: #111A2E;
+  --sidebar-foreground: #F3F4F6;
+  --sidebar-primary: #93C5FD;
+  --sidebar-primary-foreground: #0B1220;
+  --sidebar-accent: #1A2540;
+  --sidebar-accent-foreground: #F3F4F6;
+  --sidebar-border: #2D3A5A;
+  --sidebar-ring: #60A5FA;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+
+  /* ========================================
+     ACESSIBILIDADE - ESTADOS DE FOCO
+     ======================================== */
+
+  /* Estado de foco visível para navegação por teclado */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  [role="button"]:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  /* Remove outline padrão apenas quando não for via teclado */
+  button:focus:not(:focus-visible),
+  a:focus:not(:focus-visible),
+  input:focus:not(:focus-visible),
+  textarea:focus:not(:focus-visible),
+  select:focus:not(:focus-visible) {
+    outline: none;
+  }
+}

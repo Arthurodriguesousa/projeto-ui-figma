@@ -32,33 +32,11 @@ O design de interface (UI) e a experiência do usuário (UX) foram totalmente pr
 
 ---
 
-## 🖼️ Telas do Aplicativo
-
-*(Adicione os prints ou exportações do Figma dentro de uma pasta chamadas `assets` no repositório)*
-
-| Tela de Login | Análise com IA | Comunidade |
-| :-: | :-: | :-: |
-| <img src="assets/login.png" width="200"/> | <img src="assets/ia-analise.png" width="200"/> | <img src="assets/comunidade.png" width="200"/> |
-
----
-
 ## 🛠️ Tecnologias e Ferramentas
 
 * **UI/UX Design:** [Figma](https://figma.com)
 * **Inteligência Artificial (Conceito/Modelo):** [Ex: OpenAI API / Modelo Proprietário]
 * **Documentação & Versionamento:** Git e GitHub
-
----
-
-## 🎓 Integrantes do Projeto
-
-Trabalho desenvolvido pelos alunos:
-
-* **[Seu Nome Complete]** - *Design UI/UX & Documentação* - [GitHub](https://github.com/SEU_USUARIO)
-* **[Nome do Integrante 2]** - *Função no grupo* - [GitHub](https://github.com/USUARIO)
-* **[Nome do Integrante 3]** - *Função no grupo* - [GitHub](https://github.com/USUARIO)
-
-**Orientador(a):** Prof(a). [Nome do Professor]
 
 ---
 

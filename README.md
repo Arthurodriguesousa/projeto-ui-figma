@@ -9,16 +9,7 @@
 
 O **FraudGuard AI** é uma solução desenvolvida para combater o avanço de fraudes e golpes digitais. Unindo **Inteligência Artificial** e a **colaboração da comunidade**, o aplicativo analisa mensagens, links, chamadas e chaves Pix suspeitas para identificar padrões de golpes em tempo real, protegendo os usuários antes que sofram prejuízos financeiros ou vazamento de dados.
 
-Este projeto foi concebido e desenvolvido como trabalho acadêmico para o curso de **[Nome do seu Curso]** na **[Nome da sua Faculdade/Universidade]**.
-
----
-
-## 🎨 Protótipo e Design no Figma
-
-O design de interface (UI) e a experiência do usuário (UX) foram totalmente projetados no Figma. Você pode visualizar o projeto completo e interagir com o protótipo nos links abaixo:
-
-* 📱 **[Protótipo Interativo no Figma](INSIRA_O_LINK_DO_PROTOTIPO_AQUI)**
-* 🎨 **[Arquivo de Design no Figma](INSIRA_O_LINK_DO_ARQUIVO_AQUI)**
+Este projeto foi concebido e desenvolvido como trabalho acadêmico para o curso de **Ciência da Computação** na **Universidade Positivo**.
 
 ---
 
